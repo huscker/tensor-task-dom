@@ -23,7 +23,7 @@ function gen(i,childrenCount,level){
 	let item = document.createElement('div');
 	item.classList.add(`item_${i}`);
 	if(i < level){
-		for(let i = 0;i<childrenCount;i++){
+		for(let j = 0;j<childrenCount;j++){
 			item.append(gen(i+1,childrenCount,level));
 		}
 	}
