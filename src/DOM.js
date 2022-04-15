@@ -44,7 +44,8 @@ export function generateTree(childrenCount, level) {
 export function replaceNodes() {
 	let tree = generateTree(2,3);
 	for(let i = 0;i<2;i++){
-		tree.getElementsByClassName('item_2')[i].outerHTML = "<section> class='item_2'"+tree.getElementsByClassName('item_2')[i].innerHTML+"</section>";
+		let cur = tree.getElementsByClassName('item_2')[i];
+		cur.outerHTML = "<section class='item_2'>"+cur.innerHTML+"</section>";
 	}
 	return tree;
 
