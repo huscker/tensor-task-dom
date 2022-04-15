@@ -7,8 +7,8 @@
 export function appendToBody(tag, content, count) {
 	for(let i = 0;i<count;i++){
 		let e = document.createElement(tag);
-		elem.innerHTML = content;
-		document.body.insertAdjacentElement('afterbegin',elem);
+		e.innerHTML = content;
+		document.body.insertAdjacentElement('afterbegin',e);
 	}
 }
 
